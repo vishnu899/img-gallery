@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+    <div class="full-img" id="fullImgBox">
+        <img src="photo-1455849318743-b2233052fcff.avif" alt="" id="fullImg">
+        <span onclick="closeFullImg()">X</span>
+    </div>
+
+    <div class="img-gallery">
+        <img src="photo-1455849318743-b2233052fcff.avif" alt="" onclick="openFullImg(this.src)">
+        <img src="photo-1472289065668-ce650ac443d2.avif" alt="" onclick="openFullImg(this.src)">
+      
+        <img src="photo-1496449903678-68ddcb189a24.avif" alt="" onclick="openFullImg(this.src)">
+        <img src="photo-1499728603263-13726abce5fd.avif" alt="" onclick="openFullImg(this.src)">
+        <img src="photo-1502139214982-d0ad755818d8.avif" alt="" onclick="openFullImg(this.src)">
+        <img src="l.avif" alt="" onclick="openFullImg(this.src)">
+        <img src="photo-1513151233558-d860c5398176.avif" alt="" onclick="openFullImg(this.src)">
+        <img src="k.avif" alt=""onclick="openFullImg(this.src)">
+        <img src="s.avif" alt="" onclick="openFullImg(this.src)">
+        <img src="e.avif" alt="" onclick="openFullImg(this.src)">
+    </div>
+
+
+    <script>
+        var fullImgBox = document.getElementById("fullImgBox")
+        var fullimg = document.getElementById("fullImg")
+
+    function openFullImg(pic) {
+        fullImgBox.style.display = "flex";
+        fullimg.src = pic;
+    }
+
+    function closeFullImg() {
+        fullImgBox.style.display = "none";
+    }
+    </script>
+</body>
+</html>
